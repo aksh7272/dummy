@@ -1,0 +1,162 @@
+[
+  {
+    "customer_id": "C000001",
+    "name": "Michael Wilson",
+    "email": "michael.wilson001@example.com",
+    "phone_number": "9762583642",
+    "signup_date": "2024-03-11",
+    "status": "active"
+  },
+  {
+    "customer_id": "C000002",
+    "name": "Vikram Miller",
+    "email": "vikram.miller002@gmail.com",
+    "phone_number": "8217089475",
+    "signup_date": "2024-07-06",
+    "status": "suspended"
+  },
+  {
+    "customer_id": "C000003",
+    "name": "Emily Mehta",
+    "email": "emily.mehta003@yahoo.com",
+    "phone_number": "7176678305",
+    "signup_date": "2025-04-14",
+    "status": "active"
+  },
+  {
+    "customer_id": "C000004",
+    "name": "Emily Taylor",
+    "email": "emily.taylor004@example.com",
+    "phone_number": "7589618775",
+    "signup_date": "2024-03-29",
+    "status": "active"
+  },
+  {
+    "customer_id": "C000005",
+    "name": "Olivia Wilson",
+    "email": "olivia.wilson005@example.com",
+    "phone_number": "9798164003",
+    "signup_date": "2025-03-01",
+    "status": "active"
+  },
+  {
+    "customer_id": "C000006",
+    "name": "David Mehta",
+    "email": "david.mehta006@gmail.com",
+    "phone_number": "9975893890",
+    "signup_date": "2025-11-16",
+    "status": "active"
+  },
+  {
+    "customer_id": "C000007",
+    "name": "Arjun Patel",
+    "email": "arjun.patel007@yahoo.com",
+    "phone_number": "8839057452",
+    "signup_date": "2024-07-19",
+    "status": "active"
+  },
+  {
+    "customer_id": "C000008",
+    "name": "Jane Garcia",
+    "email": "jane.garcia008@yahoo.com",
+    "phone_number": "7183898364",
+    "signup_date": "2025-11-24",
+    "status": "active"
+  },
+  {
+    "customer_id": "C000009",
+    "name": "Olivia Mehta",
+    "email": "olivia.mehta009@yahoo.com",
+    "phone_number": "7778273239",
+    "signup_date": "2024-01-26",
+    "status": "inactive"
+  },
+  {
+    "customer_id": "C000010",
+    "name": "Priya Jones",
+    "email": "priya.jones010@yahoo.com",
+    "phone_number": "8969572794",
+    "signup_date": "2024-09-13",
+    "status": "active"
+  },
+  {
+    "customer_id": "C000011",
+    "name": "Arjun Wilson",
+    "email": "arjun.wilson011@yahoo.com",
+    "phone_number": "6100810563",
+    "signup_date": "2025-12-11",
+    "status": "active"
+  },
+  {
+    "customer_id": "C000012",
+    "name": "Ananya Brown",
+    "email": "ananya.brown012@example.com",
+    "phone_number": "6745476038",
+    "signup_date": "2025-06-14",
+    "status": "active"
+  },
+  {
+    "customer_id": "C000013",
+    "name": "Arjun Johnson",
+    "email": "arjun.johnson013@yahoo.com",
+    "phone_number": "7358616700",
+    "signup_date": "2025-06-29",
+    "status": "active"
+  },
+  {
+    "customer_id": "C000014",
+    "name": "Sarah Davis",
+    "email": "sarah.davis014@yahoo.com",
+    "phone_number": "8055028413",
+    "signup_date": "2024-02-17",
+    "status": "inactive"
+  },
+  {
+    "customer_id": "C000015",
+    "name": "Michael Reddy",
+    "email": "michael.reddy015@example.com",
+    "phone_number": "7063103115",
+    "signup_date": "2025-04-20",
+    "status": "inactive"
+  },
+  {
+    "customer_id": "C000016",
+    "name": "Arjun Smith",
+    "email": "arjun.smith016@yahoo.com",
+    "phone_number": "8907207799",
+    "signup_date": "2024-12-16",
+    "status": "active"
+  },
+  {
+    "customer_id": "C000017",
+    "name": "Emily Wilson",
+    "email": "emily.wilson017@yahoo.com",
+    "phone_number": "8816529595",
+    "signup_date": "2025-08-23",
+    "status": "active"
+  },
+  {
+    "customer_id": "C000018",
+    "name": "Michael Reddy",
+    "email": "michael.reddy018@gmail.com",
+    "phone_number": "6617028520",
+    "signup_date": "2025-07-14",
+    "status": "active"
+  },
+  {
+    "customer_id": "C000019",
+    "name": "Priya Patel",
+    "email": "priya.patel019@example.com",
+    "phone_number": "9207125125",
+    "signup_date": "2025-08-30",
+    "status": "active"
+  },
+  {
+    "customer_id": "C000020",
+    "name": "Priya Wilson",
+    "email": "priya.wilson020@gmail.com",
+    "phone_number": "7255074439",
+    "signup_date": "2024-10-23",
+    "status": "active"
+  }
+]

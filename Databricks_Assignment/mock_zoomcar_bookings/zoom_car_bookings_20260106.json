@@ -1,0 +1,202 @@
+[
+  {
+    "booking_id": "B000101",
+    "customer_id": "C000133",
+    "car_id": "CAR2584",
+    "booking_date": "2026-01-06",
+    "start_time": "2026-01-06T11:00:00Z",
+    "end_time": "2026-01-06T18:00:00Z",
+    "total_amount": 114.89,
+    "status": "completed"
+  },
+  {
+    "booking_id": "B000102",
+    "customer_id": "C000093",
+    "car_id": "CAR1510",
+    "booking_date": "2026-01-06",
+    "start_time": "2026-01-06T15:00:00Z",
+    "end_time": "2026-01-07T03:00:00Z",
+    "total_amount": 246.22,
+    "status": "completed"
+  },
+  {
+    "booking_id": "B000103",
+    "customer_id": "C000140",
+    "car_id": "CAR7029",
+    "booking_date": "2026-01-06",
+    "start_time": "2026-01-06T03:00:00Z",
+    "end_time": "2026-01-06T15:00:00Z",
+    "total_amount": 294.52,
+    "status": "completed"
+  },
+  {
+    "booking_id": "B000104",
+    "customer_id": "C000072",
+    "car_id": "CAR7000",
+    "booking_date": "2026-01-06",
+    "start_time": "2026-01-06T03:00:00Z",
+    "end_time": "2026-01-06T14:00:00Z",
+    "total_amount": 252.97,
+    "status": "completed"
+  },
+  {
+    "booking_id": "B000105",
+    "customer_id": "C000126",
+    "car_id": "CAR7477",
+    "booking_date": "2026-01-06",
+    "start_time": "2026-01-06T20:00:00Z",
+    "end_time": "2026-01-07T06:00:00Z",
+    "total_amount": 248.93,
+    "status": "completed"
+  },
+  {
+    "booking_id": "B000106",
+    "customer_id": "C000177",
+    "car_id": "CAR5801",
+    "booking_date": "2026-01-06",
+    "start_time": "2026-01-06T12:00:00Z",
+    "end_time": "2026-01-06T14:00:00Z",
+    "total_amount": 53.58,
+    "status": "completed"
+  },
+  {
+    "booking_id": "B000107",
+    "customer_id": "C000128",
+    "car_id": "CAR9500",
+    "booking_date": "2026-01-06",
+    "start_time": "2026-01-06T14:00:00Z",
+    "end_time": "2026-01-06T17:00:00Z",
+    "total_amount": 124.17,
+    "status": "pending"
+  },
+  {
+    "booking_id": "B000108",
+    "customer_id": "C000114",
+    "car_id": "CAR6049",
+    "booking_date": "2026-01-06",
+    "start_time": "2026-01-06T02:00:00Z",
+    "end_time": "2026-01-06T10:00:00Z",
+    "total_amount": 137.54,
+    "status": "completed"
+  },
+  {
+    "booking_id": "B000109",
+    "customer_id": "C000183",
+    "car_id": "CAR7424",
+    "booking_date": "2026-01-06",
+    "start_time": "2026-01-06T18:00:00Z",
+    "end_time": "2026-01-07T05:00:00Z",
+    "total_amount": 167.1,
+    "status": "completed"
+  },
+  {
+    "booking_id": "B000110",
+    "customer_id": "C000008",
+    "car_id": "CAR3792",
+    "booking_date": "2026-01-06",
+    "start_time": "2026-01-06T16:00:00Z",
+    "end_time": "2026-01-06T19:00:00Z",
+    "total_amount": 94.68,
+    "status": "completed"
+  },
+  {
+    "booking_id": "B000111",
+    "customer_id": "C000059",
+    "car_id": "CAR2083",
+    "booking_date": "2026-01-06",
+    "start_time": "2026-01-06T11:00:00Z",
+    "end_time": "2026-01-06T20:00:00Z",
+    "total_amount": 176.12,
+    "status": "completed"
+  },
+  {
+    "booking_id": "B000112",
+    "customer_id": "C000068",
+    "car_id": "CAR9583",
+    "booking_date": "2026-01-06",
+    "start_time": "2026-01-06T19:00:00Z",
+    "end_time": "2026-01-07T06:00:00Z",
+    "total_amount": 184.54,
+    "status": "completed"
+  },
+  {
+    "booking_id": "B000113",
+    "customer_id": "C000173",
+    "car_id": "CAR818",
+    "booking_date": "2026-01-06",
+    "start_time": "2026-01-06T20:00:00Z",
+    "end_time": "2026-01-06T23:00:00Z",
+    "total_amount": 73.21,
+    "status": "completed"
+  },
+  {
+    "booking_id": "B000114",
+    "customer_id": "C000077",
+    "car_id": "CAR3678",
+    "booking_date": "2026-01-06",
+    "start_time": "2026-01-06T16:00:00Z",
+    "end_time": "2026-01-06T18:00:00Z",
+    "total_amount": 65.66,
+    "status": "pending"
+  },
+  {
+    "booking_id": "B000115",
+    "customer_id": "C000142",
+    "car_id": "CAR5854",
+    "booking_date": "2026-01-06",
+    "start_time": "2026-01-06T10:00:00Z",
+    "end_time": "2026-01-06T19:00:00Z",
+    "total_amount": 173.34,
+    "status": "completed"
+  },
+  {
+    "booking_id": "B000116",
+    "customer_id": "C000115",
+    "car_id": "CAR1508",
+    "booking_date": "2026-01-06",
+    "start_time": "2026-01-06T17:00:00Z",
+    "end_time": "2026-01-06T19:00:00Z",
+    "total_amount": 77.17,
+    "status": "completed"
+  },
+  {
+    "booking_id": "B000117",
+    "customer_id": "C000163",
+    "car_id": "CAR9187",
+    "booking_date": "2026-01-06",
+    "start_time": "2026-01-06T08:00:00Z",
+    "end_time": "2026-01-06T19:00:00Z",
+    "total_amount": 158.03,
+    "status": "completed"
+  },
+  {
+    "booking_id": "B000118",
+    "customer_id": "C000106",
+    "car_id": "CAR3630",
+    "booking_date": "2026-01-06",
+    "start_time": "2026-01-06T14:00:00Z",
+    "end_time": "2026-01-06T17:00:00Z",
+    "total_amount": 105.27,
+    "status": "completed"
+  },
+  {
+    "booking_id": "B000119",
+    "customer_id": "C000154",
+    "car_id": "CAR6848",
+    "booking_date": "2026-01-06",
+    "start_time": "2026-01-06T13:00:00Z",
+    "end_time": "2026-01-06T20:00:00Z",
+    "total_amount": 187.8,
+    "status": "completed"
+  },
+  {
+    "booking_id": "B000120",
+    "customer_id": "C000159",
+    "car_id": "CAR9774",
+    "booking_date": "2026-01-06",
+    "start_time": "2026-01-06T05:00:00Z",
+    "end_time": "2026-01-06T09:00:00Z",
+    "total_amount": 94.78,
+    "status": "completed"
+  }
+]
