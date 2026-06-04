@@ -2,7 +2,7 @@ from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.providers.google.cloud.operators.dataproc import (
     DataprocCreateClusterOperator,
-    DataprocSubmitPySparkJobOperator,
+    DataprocSubmitJobOperator,
     DataprocDeleteClusterOperator,
 )
 from airflow.providers.google.cloud.sensors.gcs import GCSObjectExistenceSensor
@@ -18,6 +18,7 @@ default_args = {
     'catchup': False,  # Set catchup to False
 }
 
+# DAG Configuration
 dag = DAG(
     'gcp_dataproc_spark_job',
     default_args=default_args,
@@ -29,7 +30,7 @@ dag = DAG(
 
 # Define cluster config
 CLUSTER_NAME = 'airflow-cluster'
-PROJECT_ID = 'dev-solstice-403604'
+PROJECT_ID = 'project-aedd3f2d-4596-4437-9dd'
 REGION = 'us-central1'
 CLUSTER_CONFIG = {
     'master_config': {
@@ -49,21 +50,22 @@ CLUSTER_CONFIG = {
         }
     },
     'software_config': {
-        'image_version': '2.1-debian11'
+        'image_version': '2.2.26-debian12'
     }
 }
 
-# Add GCSObjectExistenceSensor task
+# File Sensor Task ->Add GCSObjectExistenceSensor task
 file_sensor_task = GCSObjectExistenceSensor(
     task_id='file_sensor_task',
-    bucket='airflow_ass1',  # Replace with your GCS bucket name
-    object='input_files/employee.csv',  # Replace with your daily CSV file path
-    poke_interval=300,  # Poke every 10 seconds
+    bucket='ak-airflow-bucket',  # Replace with your GCS bucket name
+    object='data/employee.csv',  # Replace with your daily CSV file path
+    poke_interval=300,  # Poke every 5 minutes
     timeout=43200,  # Maximum poke duration of 12 hours
     mode='poke',
     dag=dag,
 )
 
+# Dataproc Cluster Creation Task:
 create_cluster = DataprocCreateClusterOperator(
     task_id='create_cluster',
     cluster_name=CLUSTER_NAME,
@@ -74,18 +76,24 @@ create_cluster = DataprocCreateClusterOperator(
 )
 
 pyspark_job = {
-    'main_python_file_uri': 'gs://airflow_ass1/python_file/employee_batch.py'
+    'main_python_file_uri': 'gs://ak-airflow-bucket/spark_job/employee_batch.py'
 }
 
-submit_pyspark_job = DataprocSubmitPySparkJobOperator(
+# PySpark Job Execution Task:
+submit_pyspark_job = DataprocSubmitJobOperator(
     task_id='submit_pyspark_job',
-    main=pyspark_job['main_python_file_uri'],
-    cluster_name=CLUSTER_NAME,
+    job={"reference": {"project_id": PROJECT_ID},
+            "placement": {"cluster_name": "airflow-cluster"},
+            "pyspark_job": {"main_python_file_uri": pyspark_job["main_python_file_uri"],
+            "args": []
+        }
+    },
     region=REGION,
     project_id=PROJECT_ID,
     dag=dag,
 )
 
+# Delete Cluster
 delete_cluster = DataprocDeleteClusterOperator(
     task_id='delete_cluster',
     project_id=PROJECT_ID,

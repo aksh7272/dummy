@@ -1,0 +1,162 @@
+[
+  {
+    "customer_id": "C000161",
+    "name": "Jane Smith",
+    "email": "jane.smith161@gmail.com",
+    "phone_number": "8991094063",
+    "signup_date": "2025-01-10",
+    "status": "active"
+  },
+  {
+    "customer_id": "C000162",
+    "name": "Sarah Brown",
+    "email": "sarah.brown162@yahoo.com",
+    "phone_number": "7609208793",
+    "signup_date": "2024-07-12",
+    "status": "active"
+  },
+  {
+    "customer_id": "C000163",
+    "name": "Ananya Jones",
+    "email": "ananya.jones163@example.com",
+    "phone_number": "6081150706",
+    "signup_date": "2025-04-22",
+    "status": "active"
+  },
+  {
+    "customer_id": "C000164",
+    "name": "Sarah Taylor",
+    "email": "sarah.taylor164@yahoo.com",
+    "phone_number": "8458990024",
+    "signup_date": "2025-03-11",
+    "status": "active"
+  },
+  {
+    "customer_id": "C000165",
+    "name": "Rahul Miller",
+    "email": "rahul.miller165@gmail.com",
+    "phone_number": "6026215012",
+    "signup_date": "2024-02-09",
+    "status": "active"
+  },
+  {
+    "customer_id": "C000166",
+    "name": "Daniel Wilson",
+    "email": "daniel.wilson166@example.com",
+    "phone_number": "7931720970",
+    "signup_date": "2024-09-22",
+    "status": "active"
+  },
+  {
+    "customer_id": "C000167",
+    "name": "Michael Brown",
+    "email": "michael.brown167@yahoo.com",
+    "phone_number": "8735731414",
+    "signup_date": "2024-09-02",
+    "status": "active"
+  },
+  {
+    "customer_id": "C000168",
+    "name": "John Miller",
+    "email": "john.miller168@example.com",
+    "phone_number": "7535774533",
+    "signup_date": "2025-11-30",
+    "status": "active"
+  },
+  {
+    "customer_id": "C000169",
+    "name": "Sophia Reddy",
+    "email": "sophia.reddy169@yahoo.com",
+    "phone_number": "9392006128",
+    "signup_date": "2024-02-25",
+    "status": "active"
+  },
+  {
+    "customer_id": "C000170",
+    "name": "Sarah Smith",
+    "email": "sarah.smith170@gmail.com",
+    "phone_number": "9467305615",
+    "signup_date": "2025-06-12",
+    "status": "inactive"
+  },
+  {
+    "customer_id": "C000171",
+    "name": "Rahul Patel",
+    "email": "rahul.patel171@gmail.com",
+    "phone_number": "6201669981",
+    "signup_date": "2024-05-26",
+    "status": "active"
+  },
+  {
+    "customer_id": "C000172",
+    "name": "Michael Brown",
+    "email": "michael.brown172@yahoo.com",
+    "phone_number": "9089544373",
+    "signup_date": "2024-05-18",
+    "status": "active"
+  },
+  {
+    "customer_id": "C000173",
+    "name": "Emily Brown",
+    "email": "emily.brown173@example.com",
+    "phone_number": "7102727947",
+    "signup_date": "2024-08-10",
+    "status": "active"
+  },
+  {
+    "customer_id": "C000174",
+    "name": "David Garcia",
+    "email": "david.garcia174@yahoo.com",
+    "phone_number": "7770853721",
+    "signup_date": "2025-07-15",
+    "status": "active"
+  },
+  {
+    "customer_id": "C000175",
+    "name": "Daniel Miller",
+    "email": "daniel.miller175@example.com",
+    "phone_number": "7326955835",
+    "signup_date": "2024-03-10",
+    "status": "active"
+  },
+  {
+    "customer_id": "C000176",
+    "name": "Vikram Johnson",
+    "email": "vikram.johnson176@gmail.com",
+    "phone_number": "8621980645",
+    "signup_date": "2025-02-23",
+    "status": "active"
+  },
+  {
+    "customer_id": "C000177",
+    "name": "Emily Mehta",
+    "email": "emily.mehta177@yahoo.com",
+    "phone_number": "7276017586",
+    "signup_date": "2025-01-28",
+    "status": "active"
+  },
+  {
+    "customer_id": "C000178",
+    "name": "Jane Johnson",
+    "email": "jane.johnson178@gmail.com",
+    "phone_number": "9876623158",
+    "signup_date": "2025-06-09",
+    "status": "inactive"
+  },
+  {
+    "customer_id": "C000179",
+    "name": "John Johnson",
+    "email": "john.johnson179@example.com",
+    "phone_number": "9302173403",
+    "signup_date": "2025-02-24",
+    "status": "active"
+  },
+  {
+    "customer_id": "C000180",
+    "name": "Priya Garcia",
+    "email": "priya.garcia180@yahoo.com",
+    "phone_number": "6889949160",
+    "signup_date": "2024-05-26",
+    "status": "active"
+  }
+]

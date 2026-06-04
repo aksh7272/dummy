@@ -1,28 +1,65 @@
 import pandas as pd
 import random
-from faker import Faker
+from io import StringIO
+from google.cloud import storage
 
-fake = Faker()
+# -----------------------------
+# CONFIG
+# -----------------------------
+BUCKET_NAME = "ak_sparkbucket"
+PREFIX = "source/"
 
-# Definitions
-days = ["2023-08-01", "2023-08-02", "2023-08-03", "2023-08-04", "2023-08-05"]
-diseases = [("D123", "Diabetes"), ("H234", "High Blood Pressure"), ("C345", "Cancer")]
+days = ["2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05"]
+
+diseases = [
+    ("D123", "Diabetes"),
+    ("H234", "High Blood Pressure"),
+    ("C345", "Cancer")
+]
+
 genders = ["M", "F"]
 
-# For each day
+# -----------------------------
+# GCS CLIENT
+# -----------------------------
+client = storage.Client()
+bucket = client.bucket(BUCKET_NAME)
+
+# -----------------------------
+# GENERATION + UPLOAD
+# -----------------------------
 for i, day in enumerate(days):
-    # Create a list to hold data
-    data = []
-    # Create 100 records for each day
+
+    rows = []
+
     for j in range(1, 101):
-        patient_id = f'P{i*100 + j}'
-        age = random.randint(30, 70)
-        gender = random.choice(genders)
-        diagnosis_code, diagnosis_description = random.choice(diseases)
-        diagnosis_date = day
-        # Append the row to the data list
-        data.append([patient_id, age, gender, diagnosis_code, diagnosis_description, diagnosis_date])
-    
-    # Create a DataFrame and write it to CSV
-    df = pd.DataFrame(data, columns=["patient_id", "age", "gender", "diagnosis_code", "diagnosis_description", "diagnosis_date"])
-    df.to_csv(f'health_data_{day.replace("-", "")}.csv', index=False)
+        rows.append([
+            f"P{i*100 + j}",
+            random.randint(30, 70),
+            random.choice(genders),
+            random.choice(diseases)[0],
+            random.choice(diseases)[1],
+            day
+        ])
+
+    df = pd.DataFrame(rows, columns=[
+        "patient_id",
+        "age",
+        "gender",
+        "diagnosis_code",
+        "diagnosis_description",
+        "diagnosis_date"
+    ])
+
+    # Convert to CSV in memory (NO local file)
+    csv_buffer = StringIO()
+    df.to_csv(csv_buffer, index=False)
+
+    file_name = f"health_data_{day.replace('-', '')}.csv"
+    blob_path = f"{PREFIX}{file_name}"
+
+    # Upload to GCS
+    blob = bucket.blob(blob_path)
+    blob.upload_from_string(csv_buffer.getvalue(), content_type="text/csv")
+
+    print(f"Uploaded: gs://{BUCKET_NAME}/{blob_path}")
